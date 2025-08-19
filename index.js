@@ -3,6 +3,7 @@ const cors = require('cors')
 const morgan = require('morgan')
 const app = express()
 
+app.use(express.static('dist'))
 app.use(cors({
     origin: "http://localhost:5173"
 }))
